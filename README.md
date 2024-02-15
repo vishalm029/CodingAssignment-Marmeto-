@@ -34,8 +34,3 @@ This is a simple shopping site implemented using HTML, CSS, and JavaScript. The 
 - Click on the tabs (Men, Women, Kids) to switch between categories.
 - Scroll through the product cards to view details of each item.
 - Click on the "Add to Cart" button (dummy functionality).
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 811abb5f71a302d4dc9384b6ac10371dbbea17b7
