@@ -1,4 +1,4 @@
-# Shopping Site
+# Coding Assessment L-2 Code Submission Process with Boilerplate
 
 This is a simple shopping site implemented using HTML, CSS, and JavaScript. The site allows users to browse products in three categories: Men, Women, and Kids. Users can switch between categories using tabs and view product details such as image, title, vendor, price, compare at price, and discount percentage.
 
