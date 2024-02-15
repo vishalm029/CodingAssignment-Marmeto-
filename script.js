@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab');
     const productsContainer = document.getElementById('products');
     
-    // Sample product data (replace with actual API response)
+    
     const products = [
       { id: 1, category: 'men', image: 'm1.png', title: 'Mens Kurta', vendor: 'Manyvar', price: 1199.00, comparePrice: 1299.00 },
       { id: 2, category: 'men', image: 'm2.png', title: 'RCB Tshirt', vendor: 'Puma', price: 2199.00, comparePrice: 4299.00 },
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
       { id: 12, category: 'kids', image: 'k4.png', title: 'METRO-Blac.', vendor: 'Myntra', price: 1599.00, comparePrice: 1799.00}
     ];
   
-    // Function to render products based on category
+    
     function renderProducts(category) {
       productsContainer.innerHTML = '';
       const filteredProducts = products.filter(product => product.category === category);
