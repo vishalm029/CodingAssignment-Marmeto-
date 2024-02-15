@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="product-card">
             <img src="${product.image}" alt="${product.title}">
             <div class="product-info">
-
               <div class="product-title">${product.title}</div>
               <div class="product-vendor">${product.vendor}</div>
               <div class="product-price">₹${product.price}</div>
