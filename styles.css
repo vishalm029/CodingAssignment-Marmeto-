@@ -91,6 +91,22 @@ body {
     padding: 10px;
   }
   
+  .product-card {
+    position: relative; /* Add this to make the product card a positioning context */
+  }
+  
+  .product-tag {
+    position: absolute; /* Change to absolute positioning */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background-color: #FFFFFF; /* Adjust the color as needed */
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
   .product-badge {
     background-color: #000000;
     color: #fff;

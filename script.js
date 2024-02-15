@@ -22,10 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderProducts(category) {
       productsContainer.innerHTML = '';
       const filteredProducts = products.filter(product => product.category === category);
-      filteredProducts.forEach(product => {
+      filteredProducts.forEach((product, index) => {
         const discount = Math.round(((product.comparePrice - product.price) / product.comparePrice) * 100);
         const productCard = `
           <div class="product-card">
+            ${index === 0 || index === 2 || index === 3 ? '<div class="product-tag">' + getTagText(index) + '</div>' : ''}
             <img src="${product.image}" alt="${product.title}">
             <div class="product-info">
                 <div class="product-title-vendor">
@@ -45,6 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
         productsContainer.innerHTML += productCard;
       });
     }
+
+    // Function to get tag text based on index
+    function getTagText(index) {
+      switch(index) {
+        case 0:
+          return 'Wedding Special';
+        case 2:
+          return 'On Offer';
+        case 3:
+          return 'New Season';
+        default:
+          return '';
+      }
+    }
   
     // Initialize with the "Men" category
     renderProducts('men');
@@ -58,5 +73,4 @@ document.addEventListener('DOMContentLoaded', function() {
         renderProducts(category);
       });
     });
-  });
-  
+});
