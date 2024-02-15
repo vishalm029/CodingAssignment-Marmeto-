@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Sample product data (replace with actual API response)
     const products = [
-      { id: 1, category: 'men', image: 'm1.png', title: 'Mens Kurta', vendor: 'manyvar', price: 1199.00, comparePrice: 1299.00 },
+      { id: 1, category: 'men', image: 'm1.png', title: 'Mens Kurta', vendor: 'Manyvar', price: 1199.00, comparePrice: 1299.00 },
       { id: 2, category: 'men', image: 'm2.png', title: 'RCB Tshirt', vendor: 'Puma', price: 2199.00, comparePrice: 4299.00 },
       { id: 3, category: 'men', image: 'm3.png', title: 'Green Charm', vendor: 'Myntra', price: 1399.00, comparePrice: 1499.00 },
       { id: 4, category: 'men', image: 'm4.png', title: 'Mens Tshirt', vendor: 'Myntra', price: 599.00, comparePrice: 799.00},
@@ -28,12 +28,17 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="product-card">
             <img src="${product.image}" alt="${product.title}">
             <div class="product-info">
-              <div class="product-title">${product.title}</div>
-              <div class="product-vendor">${product.vendor}</div>
-              <div class="product-price">₹${product.price}</div>
-              <div class="product-compare-price">₹${product.comparePrice}</div>
-              <div class="product-discount">${discount}% off</div>
-              <button class="add-to-cart-btn">Add to Cart</button>
+                <div class="product-title-vendor">
+                    <div class="product-title">${product.title}</div>
+                    <div class="dot"></div>
+                    <div class="product-vendor">${product.vendor}</div>
+                </div>
+                <div class="price">
+                    <div class="product-price">Rs ${product.price}</div>
+                    <div class="product-compare-price">${product.comparePrice}</div>
+                    <div class="product-discount">${discount}% off</div>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
             </div>
           </div>
         `;
